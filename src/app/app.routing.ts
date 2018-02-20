@@ -8,11 +8,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
+import { ForgeViewerComponent } from './forge-viewer/forge-viewer.component';
 
 
 export const ROUTES: Routes = [
     {path: '', redirectTo: 'home', pathMatch: 'full'},
     {path: 'home', component: HomeComponent},
+    {path: 'forge-viewer', component: ForgeViewerComponent},
     {path: 'about', component: AboutComponent}
 ];
 
